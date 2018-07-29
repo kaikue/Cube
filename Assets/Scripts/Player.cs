@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
 		if (controller.isGrounded)
 		{
-			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); //TODO take this outta the grounded check
 			moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= speed;
 			if (Input.GetButton("Jump"))
